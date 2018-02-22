@@ -27,7 +27,6 @@
 		E0A5466414739F9500E28C2F /* MIT-LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = E0A5466114739F9500E28C2F /* MIT-LICENSE.txt */; };
 		E0A5466514739F9500E28C2F /* README_chs.md in Resources */ = {isa = PBXBuildFile; fileRef = E0A5466214739F9500E28C2F /* README_chs.md */; };
 		E0A5466614739F9500E28C2F /* README_jpn.md in Resources */ = {isa = PBXBuildFile; fileRef = E0A5466314739F9500E28C2F /* README_jpn.md */; };
-		E0C0F7FA1476A7F500ECCEC6 /* KeyD_AppDelegate+HotKey.m in Sources */ = {isa = PBXBuildFile; fileRef = E0C0F7F91476A7F500ECCEC6 /* KeyD_AppDelegate+HotKey.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -68,7 +67,6 @@
 		E0A5466114739F9500E28C2F /* MIT-LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "MIT-LICENSE.txt"; sourceTree = "<group>"; };
 		E0A5466214739F9500E28C2F /* README_chs.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README_chs.md; sourceTree = "<group>"; };
 		E0A5466314739F9500E28C2F /* README_jpn.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README_jpn.md; sourceTree = "<group>"; };
-		E0C0F7F91476A7F500ECCEC6 /* KeyD_AppDelegate+HotKey.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "KeyD_AppDelegate+HotKey.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -157,7 +155,6 @@
 				E0966B9C147173F300D2444F /* KeyD_AppDelegate.h */,
 				E0988E2314793C0D00E75145 /* KeyD_AppDelegate+.h */,
 				E0966B9D147173F300D2444F /* KeyD_AppDelegate.m */,
-				E0C0F7F91476A7F500ECCEC6 /* KeyD_AppDelegate+HotKey.m */,
 				E0988E1F14790BAD00E75145 /* KeyD_PreferencesWindowController.h */,
 				E0988E2014790BAD00E75145 /* KeyD_PreferencesWindowController.m */,
 				E0966B9F147173F400D2444F /* MainMenu.xib */,
@@ -266,7 +263,6 @@
 			files = (
 				E0966B97147173F300D2444F /* main.m in Sources */,
 				E0966B9E147173F300D2444F /* KeyD_AppDelegate.m in Sources */,
-				E0C0F7FA1476A7F500ECCEC6 /* KeyD_AppDelegate+HotKey.m in Sources */,
 				E0988E2114790BAD00E75145 /* KeyD_PreferencesWindowController.m in Sources */,
 				E04731B31479D19C00577580 /* NSAttributedString+Hyperlink.m in Sources */,
 			);

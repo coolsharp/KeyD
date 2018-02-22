@@ -306,8 +306,6 @@
     } else {
         [self updateLoginItemMenuState:NSOffState];
     }
-    
-    [self registerHotKey];
 }
 
 - (void)applicationWillTerminate:(NSNotification *)notification {
@@ -358,7 +356,6 @@
         [self.myStatusMenu setHighlightMode:YES];
         [self.myStatusMenu set];
     }
-    
 }
 
 - (void)enabledInputSourceChanged:(NSNotification *) notification {

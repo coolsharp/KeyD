@@ -1,10 +1,9 @@
-//
-//  ISHPreferenceWindowController.m
-//  isHUD
-//
-//  Created by ghawkgu on 11/20/11.
-//  Copyright (c) 2011 ghawkgu.
-//
+/**********************************************************************************************
+Description : 설정 화면 코드
+Date : 2018/02/22
+Author : coolsharp
+History : 설정 기능 추가
+******************************************************************************coolsharp 2017**/
 
 #import "KeyD_PreferencesWindowController.h"
 #import "KeyD_KeyCode.h"
