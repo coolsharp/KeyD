@@ -337,23 +337,26 @@
 
         [self.isName setStringValue:name];
 
+        NSImage *image;
         if ([name isEqualToString:@"ABC"]) {
             [self.panelView.layer setBackgroundColor:CGColorCreateGenericRGB(0.00, 0.00, 1.00, HUD_ALPHA_VALUE)]; //RGB plus Alpha Channel
-            [self.myStatusMenu setImage:[NSImage imageNamed:STATUS_MENU_ICON_BLUE]];
-            [self.myStatusMenu setHighlightMode:YES];
+            image = [NSImage imageNamed:STATUS_MENU_ICON_BLUE];
         }
         else {
             [self.panelView.layer setBackgroundColor:CGColorCreateGenericRGB(1.00, 0.00, 0.00, HUD_ALPHA_VALUE)]; //RGB plus Alpha Channel
-            [self.myStatusMenu setImage:[NSImage imageNamed:STATUS_MENU_ICON_RED]];
-            [self.myStatusMenu setHighlightMode:YES];
+            image = [NSImage imageNamed:STATUS_MENU_ICON_RED];
         }
-        
+
         NSURL *iconUrl = (NSURL *)TISGetInputSourceProperty(inputSource, kTISPropertyIconImageURL);
         GHKLOG(@"Icon url:%@", iconUrl);
         // WARNING! Fix this for ARC.
         self.isImage.image = [[[NSImage alloc] initWithContentsOfURL:iconUrl] autorelease];
         
         [self fadeInHud];
+
+        [self.myStatusMenu setImage:image];
+        [self.myStatusMenu setHighlightMode:YES];
+        [self.myStatusMenu set];
     }
     
 }
