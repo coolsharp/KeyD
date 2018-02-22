@@ -1,10 +1,11 @@
-//
-//  ISHAppDelegate.m
-//  isHUD
-//
-//  Created by ghawkgu on 11/15/11.
-//  Copyright (c) 2011 ghawkgu.
-//
+/**
+ ●▬▬▬▬๑۩۩๑▬▬▬▬▬●●▬▬▬▬๑۩۩๑▬▬▬▬▬●●▬▬▬▬๑۩۩๑▬▬▬▬▬●●▬▬▬▬๑۩۩๑▬▬▬▬▬●●▬▬▬▬๑۩۩๑▬▬▬▬▬●●▬▬▬▬๑۩۩๑▬▬▬▬▬●
+ Description : 앱 기본 기능
+ Date : 2018/02/22
+ Author : coolsharp
+ History : 설정 기능 추가
+ ●▬▬▬▬๑۩۩๑▬▬▬▬▬●●▬▬▬▬๑۩۩๑▬▬▬▬▬●●▬▬▬▬๑۩۩๑▬▬▬▬▬●●▬▬▬▬๑۩۩๑▬▬▬▬▬●●▬▬▬▬๑۩۩๑▬▬▬▬▬●●▬▬▬▬๑۩۩๑▬▬▬▬▬●
+ **/
 
 #import "KeyD_AppDelegate.h"
 #import "KeyD_AppDelegate+.h"
