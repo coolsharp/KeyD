@@ -392,7 +392,7 @@
 - (IBAction)openPreferences:(id)sender {
     GHKLOG(@"Preferences...");
     if (!self.preferencesController) {
-        ISHPreferencesWindowController *controller = [[ISHPreferencesWindowController alloc] initWithWindowNibName:@"PreferencesWindow"];
+        KeyDPreferencesWindowController *controller = [[KeyDPreferencesWindowController alloc] initWithWindowNibName:@"PreferencesWindow"];
         self.preferencesController = controller;
         [controller release];
     }

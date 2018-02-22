@@ -9,7 +9,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface ISHPreferencesWindowController : NSWindowController
+@interface KeyDPreferencesWindowController : NSWindowController
 @property (assign) IBOutlet NSButtonCell *radioHotKeyOptionR;
 @property (assign) IBOutlet NSButtonCell *radioHotKeyCommandR;
 @property (assign) IBOutlet NSTextField *versionNumber;
@@ -17,5 +17,4 @@
 @property (assign) IBOutlet NSTextField *fadeIn;
 @property (assign) IBOutlet NSTextField *fadeOut;
 @property (assign) IBOutlet NSComboBox *cboDisplayMonitor;
-- (IBAction)changeHotkey:(id)sender;
 @end

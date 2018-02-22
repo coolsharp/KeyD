@@ -11,7 +11,7 @@ History : 설정 기능 추가
 #import "KeyD_Defaults.h"
 #import "KeyD_AppDelegate+.h"
 
-@implementation ISHPreferencesWindowController
+@implementation KeyDPreferencesWindowController
 @synthesize radioHotKeyOptionR;
 @synthesize radioHotKeyCommandR;
 @synthesize versionNumber;
@@ -40,7 +40,6 @@ History : 설정 기능 추가
     [self.window setLevel:kCGMaximumWindowLevelKey];
     NSBundle *mainBundle = [NSBundle mainBundle];
     [self.versionNumber setStringValue:[mainBundle objectForInfoDictionaryKey:@"CFBundleShortVersionString"]];
-    NSUInteger hotkey = [[NSUserDefaults standardUserDefaults] integerForKey:DEFAULT_KEY_SELECT_INPUT_SOURCE];
     
     [self.radioHotKeyOptionR setState:NSOffState];
     [self.radioHotKeyCommandR setState:NSOffState];

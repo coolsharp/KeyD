@@ -1,13 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
     <dependencies>
-        <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13529"/>
         <capability name="box content view" minToolsVersion="7.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <customObject id="-2" userLabel="File's Owner" customClass="ISHPreferencesWindowController">
+        <customObject id="-2" userLabel="File's Owner" customClass="KeyDPreferencesWindowController">
             <connections>
                 <outlet property="cboDisplayMonitor" destination="23f-GW-Gk6" id="Je0-PE-Unz"/>
                 <outlet property="displayDuration" destination="bVa-9u-gBu" id="9XJ-nT-Q0G"/>

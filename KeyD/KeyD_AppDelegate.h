@@ -20,13 +20,11 @@
 @property (assign) IBOutlet NSView *panelView;
 @property (assign) IBOutlet NSImageView *isImage;
 @property (retain) NSStatusItem *myStatusMenu;
-@property (retain) ISHPreferencesWindowController *preferencesController;
+@property (retain) KeyDPreferencesWindowController *preferencesController;
 
 - (IBAction)quit:(id)sender;
 - (IBAction)toggleLoginItem:(id)sender;
 - (IBAction)openPreferences:(id)sender;
 
-- (IBAction)onHotKey:(id)sender;
-- (IBAction)cancelHotKey:(id)sender;
 - (IBAction)showKeyD:(id)sender;
 @end
