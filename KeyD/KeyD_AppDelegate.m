@@ -15,7 +15,7 @@
 #import <QuartzCore/QuartzCore.h>
 
 #pragma mark - Implemetation
-@implementation ISHAppDelegate (Preferences)
+@implementation KeyDAppDelegate (Preferences)
 -(void) registerDefaultPreferences {
     NSDictionary *appDefaults = [NSDictionary
                                  dictionaryWithObject:[NSNumber numberWithInteger:COMMAND_R] forKey:DEFAULT_KEY_SELECT_INPUT_SOURCE];
@@ -27,7 +27,7 @@
 }
 @end
 
-@implementation ISHAppDelegate (Helper)
+@implementation KeyDAppDelegate (Helper)
 -(void) dumpInputResource:(TISInputSourceRef)inputResource {
 #ifdef DEBUG
     NSString *isId = TISGetInputSourceProperty(inputResource, kTISPropertyInputSourceID);
@@ -48,7 +48,7 @@
 }
 @end
 
-@implementation ISHAppDelegate (LoginItem)
+@implementation KeyDAppDelegate (LoginItem)
 // I copied the codes from the following blog. And a little modification.
 // http://cocoatutorial.grapewave.com/2010/02/creating-andor-removing-a-login-item/
 
@@ -148,7 +148,7 @@
 @end
 
 #pragma mark -
-@implementation ISHAppDelegate
+@implementation KeyDAppDelegate
 
 @synthesize window = _window;
 @synthesize isName = _isName;

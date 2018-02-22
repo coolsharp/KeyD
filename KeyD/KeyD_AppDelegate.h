@@ -9,7 +9,7 @@
 #import <Cocoa/Cocoa.h>
 #import "KeyD_PreferencesWindowController.h"
 
-@interface ISHAppDelegate : NSObject <NSApplicationDelegate> {
+@interface KeyDAppDelegate : NSObject <NSApplicationDelegate> {
 @private
     BOOL fadingOut;
     NSUInteger hotkeySelectInputSource;

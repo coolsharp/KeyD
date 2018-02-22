@@ -9,7 +9,7 @@
 #import "KeyD_AppDelegate.h"
 #import <Carbon/Carbon.h>
 
-@interface ISHAppDelegate ()
+@interface KeyDAppDelegate ()
 @property (retain) NSTimer *timerToFadeOut;
 @property (retain) NSTimer *timerForHotKeyDelay;
 
@@ -20,25 +20,25 @@
 @end
 
 #pragma mark - Helpers
-@interface ISHAppDelegate (Helper)
+@interface KeyDAppDelegate (Helper)
 -(void) dumpInputResource:(TISInputSourceRef)inputResource;
 @end
 
 #pragma mark - Login item helpers
-@interface ISHAppDelegate (LoginItem)
+@interface KeyDAppDelegate (LoginItem)
 - (BOOL) isLoginItem;
 - (void) addAppAsLoginItem;
 - (void) deleteAppFromLoginItem;
 @end
 
 #pragma mark - HotKey
-@interface ISHAppDelegate (HotKey)
+@interface KeyDAppDelegate (HotKey)
 - (void)registerHotKey;
 - (void)unregisterHotKey;
 @end
 
 #pragma mark - Preferences
-@interface ISHAppDelegate (Preferences)
+@interface KeyDAppDelegate (Preferences)
 -(void) registerDefaultPreferences;
 -(void) loadPreferences;
 @end

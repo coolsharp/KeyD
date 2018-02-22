@@ -74,7 +74,7 @@ History : 설정 기능 추가
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     [userDefaults setInteger:hotkey forKey:DEFAULT_KEY_SELECT_INPUT_SOURCE];
     [userDefaults synchronize];
-    [(ISHAppDelegate *)[NSApp delegate] loadPreferences];
+    [(KeyDAppDelegate *)[NSApp delegate] loadPreferences];
 }
 
 - (IBAction)changeHotkey:(id)sender {

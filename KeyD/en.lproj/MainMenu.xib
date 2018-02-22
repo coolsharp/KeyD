@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="13529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none">
     <dependencies>
-        <deployment identifier="macosx"/>
         <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="13529"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -670,7 +669,7 @@
                 </menuItem>
             </items>
         </menu>
-        <customObject id="494" customClass="ISHAppDelegate">
+        <customObject id="494" customClass="KeyDAppDelegate">
             <connections>
                 <outlet property="isName" destination="539" id="541"/>
                 <outlet property="panelView" destination="537" id="558"/>
