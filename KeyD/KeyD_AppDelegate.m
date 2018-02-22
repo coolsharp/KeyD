@@ -401,20 +401,6 @@
     [self.preferencesController.window orderFront:nil];
 }
 
-#pragma mark - Hotkey handler
-- (IBAction)onHotKey:(id)sender {
-    self.timerForHotKeyDelay = [NSTimer scheduledTimerWithTimeInterval:HOT_KEY_HOLD_DELAY
-                                                                target:self
-                                                              selector:@selector(fadeInKeyD)
-                                                              userInfo:nil
-                                                               repeats:NO];
-}
-
-- (IBAction)cancelHotKey:(id)sender {
-    [self.timerForHotKeyDelay invalidate];
-    self.timerForHotKeyDelay = nil;
-}
-
 - (IBAction)showKeyD:(id)sender {
     [self fadeInKeyD];
 }
