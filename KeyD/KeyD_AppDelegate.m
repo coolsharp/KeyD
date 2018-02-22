@@ -182,7 +182,7 @@
     [self.window orderFrontRegardless];
     
     [CATransaction begin];
-    [CATransaction setValue:[NSNumber numberWithFloat:HUD_FADE_IN_DURATION] forKey:kCATransactionAnimationDuration];
+    [CATransaction setValue:[NSNumber numberWithFloat:KEYD_FADE_IN_DURATION] forKey:kCATransactionAnimationDuration];
     [CATransaction setValue:^{ [self didFadeIn]; } forKey:kCATransactionCompletionBlock];
     
     [[self.panelView layer] setOpacity:1.0];
@@ -191,13 +191,13 @@
 }
 
 - (void) didFadeIn {
-    self.timerToFadeOut = [NSTimer scheduledTimerWithTimeInterval:HUD_DISPLAY_DURATION target:self selector:@selector(fadeOutHud) userInfo:nil repeats:NO];
+    self.timerToFadeOut = [NSTimer scheduledTimerWithTimeInterval:KEYD_DISPLAY_DURATION target:self selector:@selector(fadeOutHud) userInfo:nil repeats:NO];
 }
 
 - (void)fadeOutHud {
     fadingOut = YES;
     [CATransaction begin];
-    [CATransaction setValue:[NSNumber numberWithFloat:HUD_FADE_OUT_DURATION] forKey:kCATransactionAnimationDuration];
+    [CATransaction setValue:[NSNumber numberWithFloat:KEYD_FADE_OUT_DURATION] forKey:kCATransactionAnimationDuration];
     [CATransaction setValue:^{ [self didFadeOut]; } forKey:kCATransactionCompletionBlock];
     
     [[self.panelView layer] setOpacity:0.0];
@@ -227,7 +227,7 @@
 //    windowFrame.size.width = labelFrame.size.width + HUD_HORIZONTAL_MARGIN * 2;
     labelFrame.size.width = 500;
     windowFrame.size.width = 500;
-    windowFrame.size.height = HUD_HEIGHT;
+    windowFrame.size.height = KEYD_HEIGHT;
     
     NSRect screenRect = [[[NSScreen screens] objectAtIndex:1] visibleFrame];
     windowFrame.origin.x = screenRect.origin.x + (screenRect.size.width - windowFrame.size.width) / 2;
@@ -240,7 +240,7 @@
     viewFrame.origin.y = 0;
     [self.panelView setFrame:viewFrame];
     
-    labelFrame.origin.x = HUD_HORIZONTAL_MARGIN;
+    labelFrame.origin.x = KEYD_HORIZONTAL_MARGIN;
     labelFrame.origin.y = (windowFrame.size.height - labelFrame.size.height) / 2;
     [self.isName setFrame:labelFrame];
 }
@@ -278,8 +278,8 @@
     [self.window setCollectionBehavior: NSWindowCollectionBehaviorCanJoinAllSpaces];
     
     CALayer *viewLayer = [CALayer layer];
-    [viewLayer setBackgroundColor:CGColorCreateGenericRGB(0.05, 0.05, 0.05, HUD_ALPHA_VALUE)]; //RGB plus Alpha Channel
-    [viewLayer setCornerRadius:HUD_CORNER_RADIUS];
+    [viewLayer setBackgroundColor:CGColorCreateGenericRGB(0.05, 0.05, 0.05, KEYD_ALPHA_VALUE)]; //RGB plus Alpha Channel
+    [viewLayer setCornerRadius:KEYD_CORNER_RADIUS];
     [self.panelView setWantsLayer:YES]; // view's backing store is using a Core Animation Layer
     [self.panelView setLayer:viewLayer];
     [[self.panelView layer] setOpacity:0.0];
@@ -338,11 +338,11 @@
 
         NSImage *image;
         if ([name isEqualToString:@"ABC"]) {
-            [self.panelView.layer setBackgroundColor:CGColorCreateGenericRGB(0.00, 0.00, 1.00, HUD_ALPHA_VALUE)]; //RGB plus Alpha Channel
+            [self.panelView.layer setBackgroundColor:CGColorCreateGenericRGB(0.00, 0.00, 1.00, KEYD_ALPHA_VALUE)]; //RGB plus Alpha Channel
             image = [NSImage imageNamed:STATUS_MENU_ICON_BLUE];
         }
         else {
-            [self.panelView.layer setBackgroundColor:CGColorCreateGenericRGB(1.00, 0.00, 0.00, HUD_ALPHA_VALUE)]; //RGB plus Alpha Channel
+            [self.panelView.layer setBackgroundColor:CGColorCreateGenericRGB(1.00, 0.00, 0.00, KEYD_ALPHA_VALUE)]; //RGB plus Alpha Channel
             image = [NSImage imageNamed:STATUS_MENU_ICON_RED];
         }
 
