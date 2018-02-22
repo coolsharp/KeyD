@@ -28,5 +28,5 @@
 
 - (IBAction)onHotKey:(id)sender;
 - (IBAction)cancelHotKey:(id)sender;
-- (IBAction)showHud:(id)sender;
+- (IBAction)showKeyD:(id)sender;
 @end

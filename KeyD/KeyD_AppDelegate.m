@@ -9,7 +9,6 @@
 
 #import "KeyD_AppDelegate.h"
 #import "KeyD_AppDelegate+.h"
-#import "KeyD_KeyCode.h"
 #import "KeyD_Defaults.h"
 #import <Carbon/Carbon.h>
 #import <QuartzCore/QuartzCore.h>
@@ -17,9 +16,9 @@
 #pragma mark - Implemetation
 @implementation KeyDAppDelegate (Preferences)
 -(void) registerDefaultPreferences {
-    NSDictionary *appDefaults = [NSDictionary
-                                 dictionaryWithObject:[NSNumber numberWithInteger:COMMAND_R] forKey:DEFAULT_KEY_SELECT_INPUT_SOURCE];
-    [[NSUserDefaults standardUserDefaults] registerDefaults:appDefaults];
+//    NSDictionary *appDefaults = [NSDictionary
+//                                 dictionaryWithObject:[NSNumber numberWithInteger:COMMAND_R] forKey:DEFAULT_KEY_SELECT_INPUT_SOURCE];
+//    [[NSUserDefaults standardUserDefaults] registerDefaults:appDefaults];
 }
 -(void) loadPreferences {
     GHKLOG(@"Preferences changed!");
@@ -171,7 +170,7 @@
 }
 
 #pragma mark - Window fadding in/out animation
-- (void)fadeInHud {
+- (void)fadeInKeyD {
     if (self.timerToFadeOut) {
         [self.timerToFadeOut invalidate];
         self.timerToFadeOut = nil;
@@ -213,7 +212,7 @@
     fadingOut = NO;
 }
 
-- (void)setUpHUD {
+- (void)setUpKeyD {
     //Set the longest name in the label, the make the label to autofit the name.
     [self.isName setFont:[NSFont systemFontOfSize:150]];
     [self.isName sizeToFit];
@@ -284,7 +283,7 @@
     [self.panelView setLayer:viewLayer];
     [[self.panelView layer] setOpacity:0.0];
     
-    [self setUpHUD];
+    [self setUpKeyD];
 }
 
 
@@ -327,7 +326,7 @@
     
     //Display the input source name only if it has changed.
     if (![previousIsName isEqualToString:name]) {
-        [self setUpHUD];
+        [self setUpKeyD];
 
         previousIsName = name;
 
@@ -351,7 +350,7 @@
         // WARNING! Fix this for ARC.
         self.isImage.image = [[[NSImage alloc] initWithContentsOfURL:iconUrl] autorelease];
         
-        [self fadeInHud];
+        [self fadeInKeyD];
 
         [self.myStatusMenu setImage:image];
         [self.myStatusMenu setHighlightMode:YES];
@@ -360,15 +359,15 @@
 }
 
 - (void)enabledInputSourceChanged:(NSNotification *) notification {
-    [self setUpHUD];
+    [self setUpKeyD];
 }
 
 - (void)screenSizeChanged:(NSNotification *) notification {
-    [self setUpHUD];
+    [self setUpKeyD];
 }
 
 - (void)localeChanged:(NSNotification *) notification {
-    [self setUpHUD];
+    [self setUpKeyD];
 }
 
 #pragma mark - Menu item event handler
@@ -387,6 +386,9 @@
     }
 }
 
+/**
+ 설정 열기 메뉴 선택
+**/
 - (IBAction)openPreferences:(id)sender {
     GHKLOG(@"Preferences...");
     if (!self.preferencesController) {
@@ -403,7 +405,7 @@
 - (IBAction)onHotKey:(id)sender {
     self.timerForHotKeyDelay = [NSTimer scheduledTimerWithTimeInterval:HOT_KEY_HOLD_DELAY
                                                                 target:self
-                                                              selector:@selector(fadeInHud)
+                                                              selector:@selector(fadeInKeyD)
                                                               userInfo:nil
                                                                repeats:NO];
 }
@@ -413,7 +415,7 @@
     self.timerForHotKeyDelay = nil;
 }
 
-- (IBAction)showHud:(id)sender {
-    [self fadeInHud];
+- (IBAction)showKeyD:(id)sender {
+    [self fadeInKeyD];
 }
 @end

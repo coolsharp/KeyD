@@ -13,8 +13,8 @@
 @property (retain) NSTimer *timerToFadeOut;
 @property (retain) NSTimer *timerForHotKeyDelay;
 
-- (void) fadeInHud;
-- (void) fadeOutHud;
+- (void) fadeInKeyD;
+- (void) fadeOutKeyD;;
 - (void) didFadeIn;
 - (void) didFadeOut;
 @end

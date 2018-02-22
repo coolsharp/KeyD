@@ -58,7 +58,6 @@
 		E0966BA0147173F400D2444F /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		E0966BA7147177BF00D2444F /* Carbon.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Carbon.framework; path = System/Library/Frameworks/Carbon.framework; sourceTree = SDKROOT; };
 		E0966BAD14724E9D00D2444F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
-		E097846E1477E0DC00261B03 /* KeyD_KeyCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyD_KeyCode.h; sourceTree = "<group>"; };
 		E0988E1F14790BAD00E75145 /* KeyD_PreferencesWindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyD_PreferencesWindowController.h; sourceTree = "<group>"; };
 		E0988E2014790BAD00E75145 /* KeyD_PreferencesWindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeyD_PreferencesWindowController.m; sourceTree = "<group>"; };
 		E0988E221479345900E75145 /* KeyD_Defaults.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeyD_Defaults.h; sourceTree = "<group>"; };
@@ -151,7 +150,6 @@
 			isa = PBXGroup;
 			children = (
 				E0988E221479345900E75145 /* KeyD_Defaults.h */,
-				E097846E1477E0DC00261B03 /* KeyD_KeyCode.h */,
 				E0966B9C147173F300D2444F /* KeyD_AppDelegate.h */,
 				E0988E2314793C0D00E75145 /* KeyD_AppDelegate+.h */,
 				E0966B9D147173F300D2444F /* KeyD_AppDelegate.m */,

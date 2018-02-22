@@ -8,7 +8,6 @@ History : 설정 기능 추가
 **/
 
 #import "KeyD_PreferencesWindowController.h"
-#import "KeyD_KeyCode.h"
 #import "KeyD_Defaults.h"
 #import "KeyD_AppDelegate+.h"
 
@@ -46,12 +45,6 @@ History : 설정 기능 추가
     [self.radioHotKeyOptionR setState:NSOffState];
     [self.radioHotKeyCommandR setState:NSOffState];
     
-    if (hotkey == OPTION_R) {
-        [self.radioHotKeyOptionR setState:NSOnState];
-    } else if (hotkey == COMMAND_R) {
-        [self.radioHotKeyCommandR setState:NSOnState];
-    }
-    
     [cboDisplayMonitor removeAllItems];
 
     int i = 0;
@@ -75,17 +68,5 @@ History : 설정 기능 추가
     [userDefaults setInteger:hotkey forKey:DEFAULT_KEY_SELECT_INPUT_SOURCE];
     [userDefaults synchronize];
     [(KeyDAppDelegate *)[NSApp delegate] loadPreferences];
-}
-
-- (IBAction)changeHotkey:(id)sender {
-    NSMatrix *matrix = (NSMatrix *)sender;
-    
-    if (matrix.selectedCell == self.radioHotKeyOptionR) {
-        GHKLOG(@"Change hot key Option R");
-        [self saveHotKey:OPTION_R];
-    } else if (matrix.selectedCell == self.radioHotKeyCommandR) {
-        GHKLOG(@"Change hot key Command R");
-        [self saveHotKey:COMMAND_R];
-    }
 }
 @end
