@@ -190,10 +190,10 @@
 }
 
 - (void) didFadeIn {
-    self.timerToFadeOut = [NSTimer scheduledTimerWithTimeInterval:KEYD_DISPLAY_DURATION target:self selector:@selector(fadeOutHud) userInfo:nil repeats:NO];
+    self.timerToFadeOut = [NSTimer scheduledTimerWithTimeInterval:KEYD_DISPLAY_DURATION target:self selector:@selector(fadeOutKeyD) userInfo:nil repeats:NO];
 }
 
-- (void)fadeOutHud {
+- (void)fadeOutKeyD {
     fadingOut = YES;
     [CATransaction begin];
     [CATransaction setValue:[NSNumber numberWithFloat:KEYD_FADE_OUT_DURATION] forKey:kCATransactionAnimationDuration];
