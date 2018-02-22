@@ -12,9 +12,7 @@
 		D6BEAEAB2035734A00FAC0F7 /* icon_blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6BEAEA72035734A00FAC0F7 /* icon_blue@2x.png */; };
 		D6BEAEAC2035734A00FAC0F7 /* icon_red.png in Resources */ = {isa = PBXBuildFile; fileRef = D6BEAEA82035734A00FAC0F7 /* icon_red.png */; };
 		D6BEAEAD2035734A00FAC0F7 /* icon_red@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6BEAEA92035734A00FAC0F7 /* icon_red@2x.png */; };
-		E04731B31479D19C00577580 /* NSAttributedString+Hyperlink.m in Sources */ = {isa = PBXBuildFile; fileRef = E04731B21479D19C00577580 /* NSAttributedString+Hyperlink.m */; };
 		E06496EC14737582008B28E0 /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = E06496EB14737582008B28E0 /* icon.icns */; };
-		E093DDE9147525AE00ACB3FA /* CHANGELOG_jpn.md in Resources */ = {isa = PBXBuildFile; fileRef = E093DDE8147525AE00ACB3FA /* CHANGELOG_jpn.md */; };
 		E0966B8B147173F300D2444F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E0966B8A147173F300D2444F /* Cocoa.framework */; };
 		E0966B95147173F300D2444F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E0966B93147173F300D2444F /* InfoPlist.strings */; };
 		E0966B97147173F300D2444F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E0966B96147173F300D2444F /* main.m */; };
@@ -25,8 +23,6 @@
 		E0988E2114790BAD00E75145 /* KeyD_PreferencesWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = E0988E2014790BAD00E75145 /* KeyD_PreferencesWindowController.m */; };
 		E0988E24147940EB00E75145 /* PreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = E0988E26147940EB00E75145 /* PreferencesWindow.xib */; };
 		E0A5466414739F9500E28C2F /* MIT-LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = E0A5466114739F9500E28C2F /* MIT-LICENSE.txt */; };
-		E0A5466514739F9500E28C2F /* README_chs.md in Resources */ = {isa = PBXBuildFile; fileRef = E0A5466214739F9500E28C2F /* README_chs.md */; };
-		E0A5466614739F9500E28C2F /* README_jpn.md in Resources */ = {isa = PBXBuildFile; fileRef = E0A5466314739F9500E28C2F /* README_jpn.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,13 +35,9 @@
 		D6BEAEA92035734A00FAC0F7 /* icon_red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_red@2x.png"; sourceTree = "<group>"; };
 		D6E68DFF202B569E00BD9535 /* ko */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ko; path = ko.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		D6E68E01202B569E00BD9535 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		E04731B11479D19C00577580 /* NSAttributedString+Hyperlink.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+Hyperlink.h"; sourceTree = "<group>"; };
-		E04731B21479D19C00577580 /* NSAttributedString+Hyperlink.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+Hyperlink.m"; sourceTree = "<group>"; };
 		E06496EB14737582008B28E0 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
 		E06497011473871D008B28E0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		E093DDE51475248700ACB3FA /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = CHANGELOG.md; sourceTree = "<group>"; };
-		E093DDE61475254700ACB3FA /* CHANGELOG_chs.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = CHANGELOG_chs.md; sourceTree = "<group>"; };
-		E093DDE8147525AE00ACB3FA /* CHANGELOG_jpn.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CHANGELOG_jpn.md; sourceTree = "<group>"; };
 		E0966B86147173F300D2444F /* KeyD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeyD.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0966B8A147173F300D2444F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		E0966B8D147173F300D2444F /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
@@ -64,8 +56,6 @@
 		E0988E2314793C0D00E75145 /* KeyD_AppDelegate+.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KeyD_AppDelegate+.h"; sourceTree = "<group>"; };
 		E0988E25147940EB00E75145 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/PreferencesWindow.xib; sourceTree = "<group>"; };
 		E0A5466114739F9500E28C2F /* MIT-LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = "MIT-LICENSE.txt"; sourceTree = "<group>"; };
-		E0A5466214739F9500E28C2F /* README_chs.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README_chs.md; sourceTree = "<group>"; };
-		E0A5466314739F9500E28C2F /* README_jpn.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README_jpn.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,25 +72,11 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E04731AF1479D16A00577580 /* CocoaExtension */ = {
-			isa = PBXGroup;
-			children = (
-				E04731B11479D19C00577580 /* NSAttributedString+Hyperlink.h */,
-				E04731B21479D19C00577580 /* NSAttributedString+Hyperlink.m */,
-			);
-			name = CocoaExtension;
-			path = KeyD/Cocoa;
-			sourceTree = "<group>";
-		};
 		E093DDE71475255D00ACB3FA /* Documents */ = {
 			isa = PBXGroup;
 			children = (
 				E093DDE51475248700ACB3FA /* CHANGELOG.md */,
-				E093DDE61475254700ACB3FA /* CHANGELOG_chs.md */,
-				E093DDE8147525AE00ACB3FA /* CHANGELOG_jpn.md */,
 				E06497011473871D008B28E0 /* README.md */,
-				E0A5466214739F9500E28C2F /* README_chs.md */,
-				E0A5466314739F9500E28C2F /* README_jpn.md */,
 				E0A5466114739F9500E28C2F /* MIT-LICENSE.txt */,
 			);
 			name = Documents;
@@ -109,7 +85,6 @@
 		E0966B7B147173F300D2444F = {
 			isa = PBXGroup;
 			children = (
-				E04731AF1479D16A00577580 /* CocoaExtension */,
 				E093DDE71475255D00ACB3FA /* Documents */,
 				E0966B90147173F300D2444F /* KeyD */,
 				E0966B89147173F300D2444F /* Frameworks */,
@@ -243,11 +218,8 @@
 				D6BEAEAD2035734A00FAC0F7 /* icon_red@2x.png in Resources */,
 				D6BEAEAB2035734A00FAC0F7 /* icon_blue@2x.png in Resources */,
 				E0A5466414739F9500E28C2F /* MIT-LICENSE.txt in Resources */,
-				E0A5466514739F9500E28C2F /* README_chs.md in Resources */,
 				D6206D532035EB7F004EDD9B /* KeyD-Info.plist in Resources */,
-				E0A5466614739F9500E28C2F /* README_jpn.md in Resources */,
 				D6BEAEAA2035734A00FAC0F7 /* icon_blue.png in Resources */,
-				E093DDE9147525AE00ACB3FA /* CHANGELOG_jpn.md in Resources */,
 				E0988E24147940EB00E75145 /* PreferencesWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -262,7 +234,6 @@
 				E0966B97147173F300D2444F /* main.m in Sources */,
 				E0966B9E147173F300D2444F /* KeyD_AppDelegate.m in Sources */,
 				E0988E2114790BAD00E75145 /* KeyD_PreferencesWindowController.m in Sources */,
-				E04731B31479D19C00577580 /* NSAttributedString+Hyperlink.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
