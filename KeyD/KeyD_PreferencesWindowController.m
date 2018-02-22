@@ -30,8 +30,6 @@ History : 설정 기능 추가
     return self;
 }
 
-//ssh://coolsharp@58.226.214.120/volume1/homes/coolsharp/git/KD.git
-
 - (void)windowDidLoad
 {
     [super windowDidLoad];
