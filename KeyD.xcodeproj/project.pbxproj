@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D6206D532035EB7F004EDD9B /* KeyD-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D6206D522035EB7F004EDD9B /* KeyD-Info.plist */; };
 		D6BEAEAA2035734A00FAC0F7 /* icon_blue.png in Resources */ = {isa = PBXBuildFile; fileRef = D6BEAEA62035734A00FAC0F7 /* icon_blue.png */; };
 		D6BEAEAB2035734A00FAC0F7 /* icon_blue@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = D6BEAEA72035734A00FAC0F7 /* icon_blue@2x.png */; };
 		D6BEAEAC2035734A00FAC0F7 /* icon_red.png in Resources */ = {isa = PBXBuildFile; fileRef = D6BEAEA82035734A00FAC0F7 /* icon_red.png */; };
@@ -179,7 +178,7 @@
 		E0966B7D147173F300D2444F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0910;
+				LastUpgradeCheck = 0920;
 				ORGANIZATIONNAME = "ngi group inc.";
 				TargetAttributes = {
 					E0966B85147173F300D2444F = {
@@ -218,7 +217,6 @@
 				D6BEAEAD2035734A00FAC0F7 /* icon_red@2x.png in Resources */,
 				D6BEAEAB2035734A00FAC0F7 /* icon_blue@2x.png in Resources */,
 				E0A5466414739F9500E28C2F /* MIT-LICENSE.txt in Resources */,
-				D6206D532035EB7F004EDD9B /* KeyD-Info.plist in Resources */,
 				D6BEAEAA2035734A00FAC0F7 /* icon_blue.png in Resources */,
 				E0988E24147940EB00E75145 /* PreferencesWindow.xib in Resources */,
 			);

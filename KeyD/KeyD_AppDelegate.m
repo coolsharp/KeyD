@@ -354,7 +354,7 @@
 
         [self.myStatusMenu setImage:image];
         [self.myStatusMenu setHighlightMode:YES];
-        [self.myStatusMenu set];
+        [self.myStatusMenu setVisible:true];
     }
 }
 
