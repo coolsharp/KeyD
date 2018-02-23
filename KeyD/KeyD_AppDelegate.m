@@ -254,11 +254,6 @@
     [[NSDistributedNotificationCenter defaultCenter] addObserver:self
                                                         selector:@selector(inputSourceChanged:)
                                                             name:(NSString *)kTISNotifySelectedKeyboardInputSourceChanged object:nil];
-    
-    [[NSDistributedNotificationCenter defaultCenter] addObserver:self
-                                                        selector:@selector(enabledInputSourceChanged:)
-                                                            name:(NSString *)kTISNotifyEnabledKeyboardInputSourcesChanged object:nil];
-    
     [[NSDistributedNotificationCenter defaultCenter] addObserver:self
                                                         selector:@selector(screenSizeChanged:)
                                                             name:NSApplicationDidChangeScreenParametersNotification object:nil];
@@ -292,6 +287,9 @@
     [item setState:state];
 }
 
+/**
+ <#Description#>
+ */
 -(void)awakeFromNib{
     [self initUIComponents];
     
@@ -356,10 +354,6 @@
         [self.myStatusMenu setHighlightMode:YES];
         [self.myStatusMenu setVisible:true];
     }
-}
-
-- (void)enabledInputSourceChanged:(NSNotification *) notification {
-    [self setUpKeyD];
 }
 
 - (void)screenSizeChanged:(NSNotification *) notification {
