@@ -239,7 +239,7 @@
     viewFrame.origin.y = 0;
     [self.panelView setFrame:viewFrame];
     
-    labelFrame.origin.x = KEYD_HORIZONTAL_MARGIN;
+    labelFrame.origin.x = 0;
     labelFrame.origin.y = (windowFrame.size.height - labelFrame.size.height) / 2;
     [self.isName setFrame:labelFrame];
 }
