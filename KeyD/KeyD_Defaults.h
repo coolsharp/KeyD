@@ -14,7 +14,7 @@
 #define KEYD_CORNER_RADIUS       (18.0)
 
 #define KEYD_HORIZONTAL_MARGIN   (0)
-#define KEYD_HEIGHT              (200)
+#define KEYD_HEIGHT              (50)
 
 #define HOT_KEY_HOLD_DELAY      (1.0) //Deprecated
 #define HOT_KEY_DOUBLE_STRIKE_INTERVAL (0.35)

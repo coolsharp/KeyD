@@ -214,7 +214,7 @@
 
 - (void)setUpKeyD {
     //Set the longest name in the label, the make the label to autofit the name.
-    [self.isName setFont:[NSFont systemFontOfSize:150]];
+    [self.isName setFont:[NSFont systemFontOfSize:20]];
     [self.isName sizeToFit];
     
     //Re-calculate the window frame and the the positions of subviews.
@@ -224,8 +224,8 @@
     GHKLOG(@"window:(%f, %f) (%f x %f) ", windowFrame.origin.x, windowFrame.origin.y, windowFrame.size.width, windowFrame.size.height);
 
 //    windowFrame.size.width = labelFrame.size.width + HUD_HORIZONTAL_MARGIN * 2;
-    labelFrame.size.width = 500;
-    windowFrame.size.width = 500;
+    labelFrame.size.width = 100;
+    windowFrame.size.width = 100;
     windowFrame.size.height = KEYD_HEIGHT;
     
     NSRect screenRect = [[[NSScreen screens] objectAtIndex:1] visibleFrame];
@@ -352,7 +352,7 @@
 
         [self.myStatusMenu setImage:image];
         [self.myStatusMenu setHighlightMode:YES];
-        [self.myStatusMenu setVisible:true];
+        [self.myStatusMenu set];
     }
 }
 
