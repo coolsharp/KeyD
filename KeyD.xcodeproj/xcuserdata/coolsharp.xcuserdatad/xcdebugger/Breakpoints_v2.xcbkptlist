@@ -6,16 +6,16 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "KeyD/KeyD_PreferencesWindowController.m"
-            timestampString = "541109163.5367481"
+            timestampString = "541189068.9701231"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "27"
-            endingLineNumber = "27"
-            landmarkName = "-initWithWindow:"
+            startingLineNumber = "73"
+            endingLineNumber = "73"
+            landmarkName = "-saveValue:"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>

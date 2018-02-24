@@ -27,7 +27,7 @@
 /* Begin PBXFileReference section */
 		D6206D512035EB7F004EDD9B /* KeyD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KeyD-Prefix.pch"; sourceTree = "<group>"; };
 		D6206D522035EB7F004EDD9B /* KeyD-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "KeyD-Info.plist"; sourceTree = "<group>"; };
-		D6206D562035F44E004EDD9B /* ko */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ko; path = ko.lproj/PreferencesWindow.xib; sourceTree = "<group>"; };
+		D695128A2041D8B500BCAD3C /* ko */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ko; path = ko.lproj/PreferencesWindow.xib; sourceTree = "<group>"; };
 		D6BEAEA62035734A00FAC0F7 /* icon_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_blue.png; sourceTree = "<group>"; };
 		D6BEAEA72035734A00FAC0F7 /* icon_blue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_blue@2x.png"; sourceTree = "<group>"; };
 		D6BEAEA82035734A00FAC0F7 /* icon_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_red.png; sourceTree = "<group>"; };
@@ -260,7 +260,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				E0988E25147940EB00E75145 /* en */,
-				D6206D562035F44E004EDD9B /* ko */,
+				D695128A2041D8B500BCAD3C /* ko */,
 			);
 			name = PreferencesWindow.xib;
 			sourceTree = "<group>";

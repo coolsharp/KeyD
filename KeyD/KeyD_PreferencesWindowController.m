@@ -1,11 +1,11 @@
-/**
-●▬▬▬▬๑۩۩๑▬▬▬▬▬●●▬▬▬▬๑۩۩๑▬▬▬▬▬●●▬▬▬▬๑۩۩๑▬▬▬▬▬●●▬▬▬▬๑۩۩๑▬▬▬▬▬●●▬▬▬▬๑۩۩๑▬▬▬▬▬●●▬▬▬▬๑۩۩๑▬▬▬▬▬●
-Description : 설정 화면 코드
-Date : 2018/02/22
-Author : coolsharp
-History : 설정 기능 추가
-●▬▬▬▬๑۩۩๑▬▬▬▬▬●●▬▬▬▬๑۩۩๑▬▬▬▬▬●●▬▬▬▬๑۩۩๑▬▬▬▬▬●●▬▬▬▬๑۩۩๑▬▬▬▬▬●●▬▬▬▬๑۩۩๑▬▬▬▬▬●●▬▬▬▬๑۩۩๑▬▬▬▬▬●
-**/
+/*
+ -----------------------------------------------------------------------------------------
+ Description : 설정 화면 코드
+ Date : 2018/02/22
+ Author : coolsharp
+ History : 설정 기능 추가
+ -----------------------------------------------------------------------------------------
+*/
 
 #import "KeyD_PreferencesWindowController.h"
 #import "KeyD_Defaults.h"
@@ -16,8 +16,6 @@ History : 설정 기능 추가
 @synthesize radioHotKeyCommandR;
 @synthesize versionNumber;
 @synthesize displayDuration;
-@synthesize fadeIn;
-@synthesize fadeOut;
 @synthesize cboDisplayMonitor;
 
 - (id)initWithWindow:(NSWindow *)window
@@ -39,8 +37,7 @@ History : 설정 기능 추가
     NSBundle *mainBundle = [NSBundle mainBundle];
     [self.versionNumber setStringValue:[mainBundle objectForInfoDictionaryKey:@"CFBundleShortVersionString"]];
     
-    [self.radioHotKeyOptionR setState:NSOffState];
-    [self.radioHotKeyCommandR setState:NSOffState];
+    [self loadPreference];
     
     [cboDisplayMonitor removeAllItems];
 
@@ -52,18 +49,34 @@ History : 설정 기능 추가
         NSLog(@"Screen number %i is%@ builtin", i, CGDisplayIsBuiltin(aID)? @"": @" not");
         i++;
         
-        [cboDisplayMonitor addItemWithObjectValue:CGDisplayIsBuiltin(aID)? @"internal": @"external"];
+        [cboDisplayMonitor addItemWithObjectValue:CGDisplayIsBuiltin(aID)? [@"internal " stringByAppendingString:@(i).stringValue]: [@"external " stringByAppendingString:@(i).stringValue]];
     }
     
-    [displayDuration setTitleWithMnemonic:@"0.5"];
-    [fadeIn setTitleWithMnemonic:@"0.25"];
-    [fadeOut setTitleWithMnemonic:@"0.25"];
+    [displayDuration setDelegate:self];
 }
 
-- (void) saveHotKey:(NSUInteger) hotkey {
+/*
+ 설정 값 가져오기
+*/
+- (void) loadPreference {
+    NSString* displayDurationValue = [[NSUserDefaults standardUserDefaults] stringForKey:DEFAULT_KEY_DISPLAY_DURATION];
+    if (nil != displayDurationValue) {
+        [displayDuration setTitleWithMnemonic:displayDurationValue];
+    }
+}
+
+- (void) saveValue:(NSTextField*) value {
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
-    [userDefaults setInteger:hotkey forKey:DEFAULT_KEY_SELECT_INPUT_SOURCE];
+    NSString* valueString = [value stringValue];
+    NSLog(@"Display duration %@", valueString);
+    [userDefaults setValue:valueString forKey:DEFAULT_KEY_DISPLAY_DURATION];
     [userDefaults synchronize];
     [(KeyDAppDelegate *)[NSApp delegate] loadPreferences];
+}
+
+- (void)controlTextDidChange:(NSNotification *)notification {
+    NSTextField *textField = [notification object];
+    [self saveValue:textField];
+    NSLog(@"controlTextDidChange: stringValue == %@", [textField stringValue]);
 }
 @end

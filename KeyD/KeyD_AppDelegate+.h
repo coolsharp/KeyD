@@ -1,10 +1,11 @@
-//
-//  ISHAppDelegate+.h
-//  isHUD
-//
-//  Created by ghawkgu on 11/20/11.
-//  Copyright (c) 2011 ghawkgu.
-//
+/**
+ -----------------------------------------------------------------------------------------
+ Description : 앱 기본 기능
+ Date : 2018/02/22
+ Author : coolsharp
+ History : 설정 기능 추가
+ -----------------------------------------------------------------------------------------
+ **/
 
 #import "KeyD_AppDelegate.h"
 #import <Carbon/Carbon.h>
