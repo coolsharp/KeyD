@@ -28,22 +28,22 @@
 
 @implementation KeyDAppDelegate (Helper)
 -(void) dumpInputResource:(TISInputSourceRef)inputResource {
-#ifdef DEBUG
-    NSString *isId = TISGetInputSourceProperty(inputResource, kTISPropertyInputSourceID);
-    NSString *isModeId = TISGetInputSourceProperty(inputResource, kTISPropertyInputModeID);
-    NSString *isBundleId = TISGetInputSourceProperty(inputResource, kTISPropertyBundleID);
-    NSString *localizedName = TISGetInputSourceProperty(inputResource, kTISPropertyLocalizedName);
-    BOOL isSelectable = CFBooleanGetValue(TISGetInputSourceProperty(inputResource, kTISPropertyInputSourceIsSelectCapable));
-    BOOL enableCapable = CFBooleanGetValue(TISGetInputSourceProperty(inputResource, kTISPropertyInputSourceIsEnableCapable));
-    BOOL isCurrentEnabled = CFBooleanGetValue(TISGetInputSourceProperty(inputResource, kTISPropertyInputSourceIsEnabled));
-    GHKLOG(@"==========Dump input source (%@) ===========", isId);
-    GHKLOG(@"=====>>>>> mode id (%@) ", isModeId);
-    GHKLOG(@"=====>>>>> bundle id (%@) ", isBundleId);
-    GHKLOG(@"=====>>>>> localized name (%@) ", localizedName);
-    GHKLOG(@"=====>>>>> enable capable (%@) ", enableCapable ? @"YES" : @"NO");
-    GHKLOG(@"=====>>>>> is enabled (%@) ", isCurrentEnabled ? @"YES" : @"NO");
-    GHKLOG(@"=====>>>>> select capable (%@) ", isSelectable ? @"YES" : @"NO");
-#endif
+//#ifdef DEBUG
+//    NSString *isId = TISGetInputSourceProperty(inputResource, kTISPropertyInputSourceID);
+//    NSString *isModeId = TISGetInputSourceProperty(inputResource, kTISPropertyInputModeID);
+//    NSString *isBundleId = TISGetInputSourceProperty(inputResource, kTISPropertyBundleID);
+//    NSString *localizedName = TISGetInputSourceProperty(inputResource, kTISPropertyLocalizedName);
+//    BOOL isSelectable = CFBooleanGetValue(TISGetInputSourceProperty(inputResource, kTISPropertyInputSourceIsSelectCapable));
+//    BOOL enableCapable = CFBooleanGetValue(TISGetInputSourceProperty(inputResource, kTISPropertyInputSourceIsEnableCapable));
+//    BOOL isCurrentEnabled = CFBooleanGetValue(TISGetInputSourceProperty(inputResource, kTISPropertyInputSourceIsEnabled));
+//    GHKLOG(@"==========Dump input source (%@) ===========", isId);
+//    GHKLOG(@"=====>>>>> mode id (%@) ", isModeId);
+//    GHKLOG(@"=====>>>>> bundle id (%@) ", isBundleId);
+//    GHKLOG(@"=====>>>>> localized name (%@) ", localizedName);
+//    GHKLOG(@"=====>>>>> enable capable (%@) ", enableCapable ? @"YES" : @"NO");
+//    GHKLOG(@"=====>>>>> is enabled (%@) ", isCurrentEnabled ? @"YES" : @"NO");
+//    GHKLOG(@"=====>>>>> select capable (%@) ", isSelectable ? @"YES" : @"NO");
+//#endif
 }
 @end
 
