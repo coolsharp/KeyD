@@ -22,7 +22,7 @@
 }
 -(void) loadPreferences {
     GHKLOG(@"Preferences changed!");
-    hotkeySelectInputSource = [[NSUserDefaults standardUserDefaults] integerForKey:DEFAULT_KEY_SELECT_INPUT_SOURCE];
+    duration = [[NSUserDefaults standardUserDefaults] floatForKey:DEFAULT_KEY_DISPLAY_DURATION];
 }
 @end
 
@@ -190,7 +190,7 @@
 }
 
 - (void) didFadeIn {
-    self.timerToFadeOut = [NSTimer scheduledTimerWithTimeInterval:KEYD_DISPLAY_DURATION target:self selector:@selector(fadeOutKeyD) userInfo:nil repeats:NO];
+    self.timerToFadeOut = [NSTimer scheduledTimerWithTimeInterval:duration target:self selector:@selector(fadeOutKeyD) userInfo:nil repeats:NO];
 }
 
 - (void)fadeOutKeyD {

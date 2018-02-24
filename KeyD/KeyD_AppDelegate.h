@@ -13,7 +13,7 @@
 @interface KeyDAppDelegate : NSObject <NSApplicationDelegate> {
 @private
     BOOL fadingOut;
-    NSUInteger hotkeySelectInputSource;
+    float duration;
 }
 @property (assign) IBOutlet NSWindow *window;
 @property (assign) IBOutlet NSTextField *isName;
