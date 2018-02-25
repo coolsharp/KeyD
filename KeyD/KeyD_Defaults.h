@@ -7,6 +7,7 @@
  -----------------------------------------------------------------------------------------
  **/
 
+#define KEYD_DURATION    (1)
 #define KEYD_FADE_IN_DURATION    (0.25)
 #define KEYD_FADE_OUT_DURATION   (0.25)
 #define KEYD_ALPHA_VALUE         (0.3)

@@ -22,7 +22,12 @@
 }
 -(void) loadPreferences {
     GHKLOG(@"Preferences changed!");
-    duration = [[NSUserDefaults standardUserDefaults] floatForKey:DEFAULT_KEY_DISPLAY_DURATION];
+    if (nil != [[NSUserDefaults standardUserDefaults] objectForKey:DEFAULT_KEY_DISPLAY_DURATION]) {
+        duration = [[NSUserDefaults standardUserDefaults] floatForKey:DEFAULT_KEY_DISPLAY_DURATION];
+    }
+    else {
+        duration = KEYD_DURATION;
+    }
 }
 @end
 
