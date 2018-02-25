@@ -27,7 +27,7 @@
 /* Begin PBXFileReference section */
 		D6206D512035EB7F004EDD9B /* KeyD-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KeyD-Prefix.pch"; sourceTree = "<group>"; };
 		D6206D522035EB7F004EDD9B /* KeyD-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "KeyD-Info.plist"; sourceTree = "<group>"; };
-		D695128A2041D8B500BCAD3C /* ko */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ko; path = ko.lproj/PreferencesWindow.xib; sourceTree = "<group>"; };
+		D688C50320427B3F000D7D76 /* ko */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ko; path = ko.lproj/PreferencesWindow.xib; sourceTree = "<group>"; };
 		D6BEAEA62035734A00FAC0F7 /* icon_blue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_blue.png; sourceTree = "<group>"; };
 		D6BEAEA72035734A00FAC0F7 /* icon_blue@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_blue@2x.png"; sourceTree = "<group>"; };
 		D6BEAEA82035734A00FAC0F7 /* icon_red.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon_red.png; sourceTree = "<group>"; };
@@ -182,7 +182,6 @@
 				ORGANIZATIONNAME = "ngi group inc.";
 				TargetAttributes = {
 					E0966B85147173F300D2444F = {
-						DevelopmentTeam = 3MTZ4H5698;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -260,7 +259,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				E0988E25147940EB00E75145 /* en */,
-				D695128A2041D8B500BCAD3C /* ko */,
+				D688C50320427B3F000D7D76 /* ko */,
 			);
 			name = PreferencesWindow.xib;
 			sourceTree = "<group>";
@@ -360,7 +359,7 @@
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3MTZ4H5698;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KeyD/KeyD-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/KeyD/KeyD-Info.plist";
@@ -379,7 +378,7 @@
 				CLANG_ENABLE_OBJC_ARC = NO;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 3MTZ4H5698;
+				DEVELOPMENT_TEAM = "";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "KeyD/KeyD-Prefix.pch";
 				INFOPLIST_FILE = "$(SRCROOT)/KeyD/KeyD-Info.plist";
