@@ -40,6 +40,5 @@
 
 #pragma mark - Preferences
 @interface KeyDAppDelegate (Preferences)
--(void) registerDefaultPreferences;
 -(void) loadPreferences;
 @end

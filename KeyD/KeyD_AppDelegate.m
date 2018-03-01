@@ -15,11 +15,7 @@
 
 #pragma mark - Implemetation
 @implementation KeyDAppDelegate (Preferences)
--(void) registerDefaultPreferences {
-//    NSDictionary *appDefaults = [NSDictionary
-//                                 dictionaryWithObject:[NSNumber numberWithInteger:COMMAND_R] forKey:DEFAULT_KEY_SELECT_INPUT_SOURCE];
-//    [[NSUserDefaults standardUserDefaults] registerDefaults:appDefaults];
-}
+
 -(void) loadPreferences {
     GHKLOG(@"Preferences changed!");
     if (nil != [[NSUserDefaults standardUserDefaults] objectForKey:DEFAULT_KEY_DISPLAY_DURATION]) {
@@ -254,7 +250,6 @@
 {
     // Insert code here to initialize your application
     GHKLOG(@"Initialized!");
-    [self registerDefaultPreferences];
     [self loadPreferences];
     [[NSDistributedNotificationCenter defaultCenter] addObserver:self
                                                         selector:@selector(inputSourceChanged:)
@@ -340,17 +335,16 @@
 
         NSImage *image;
         if ([name isEqualToString:@"ABC"]) {
-            [self.panelView.layer setBackgroundColor:CGColorCreateGenericRGB(0.00, 0.00, 1.00, KEYD_ALPHA_VALUE)]; //RGB plus Alpha Channel
+            [self.panelView.layer setBackgroundColor:CGColorCreateGenericRGB(0.00, 0.00, 1.00, KEYD_ALPHA_VALUE)];
             image = [NSImage imageNamed:STATUS_MENU_ICON_BLUE];
         }
         else {
-            [self.panelView.layer setBackgroundColor:CGColorCreateGenericRGB(1.00, 0.00, 0.00, KEYD_ALPHA_VALUE)]; //RGB plus Alpha Channel
+            [self.panelView.layer setBackgroundColor:CGColorCreateGenericRGB(1.00, 0.00, 0.00, KEYD_ALPHA_VALUE)];
             image = [NSImage imageNamed:STATUS_MENU_ICON_RED];
         }
 
         NSURL *iconUrl = (NSURL *)TISGetInputSourceProperty(inputSource, kTISPropertyIconImageURL);
-        GHKLOG(@"Icon url:%@", iconUrl);
-        // WARNING! Fix this for ARC.
+        
         self.isImage.image = [[[NSImage alloc] initWithContentsOfURL:iconUrl] autorelease];
         
         [self fadeInKeyD];
