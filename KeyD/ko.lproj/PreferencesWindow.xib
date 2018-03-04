@@ -30,7 +30,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <font key="font" metaFont="system"/>
                         <tabViewItems>
-                            <tabViewItem label="Preference" identifier="1" id="5">
+                            <tabViewItem label="설정" identifier="1" id="5">
                                 <view key="view" id="8">
                                     <rect key="frame" x="10" y="33" width="286" height="129"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -38,7 +38,7 @@
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" id="QlT-lt-MlY">
                                             <rect key="frame" x="4" y="100" width="139" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Select display monitor" id="MT2-sF-UWG">
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="상태를 표시할 모니터" id="MT2-sF-UWG">
                                                 <font key="font" metaFont="system"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -47,7 +47,7 @@
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" id="0zx-C0-VkB">
                                             <rect key="frame" x="4" y="69" width="102" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Display duration" id="Zwa-Km-5ec">
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="표시 시간" id="Zwa-Km-5ec">
                                                 <font key="font" metaFont="system"/>
                                                 <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
@@ -75,7 +75,7 @@
                                     </subviews>
                                 </view>
                             </tabViewItem>
-                            <tabViewItem label="About" identifier="2" id="6">
+                            <tabViewItem label="대하여" identifier="2" id="6">
                                 <view key="view" id="7">
                                     <rect key="frame" x="10" y="33" width="286" height="129"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
