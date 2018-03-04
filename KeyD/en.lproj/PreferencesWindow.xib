@@ -8,8 +8,8 @@
     <objects>
         <customObject id="-2" userLabel="File's Owner" customClass="KeyDPreferencesWindowController">
             <connections>
-                <outlet property="cboDisplayMonitor" destination="O5q-M7-pZO" id="bhf-0z-DTd"/>
                 <outlet property="displayDuration" destination="wDd-as-ziU" id="n6R-xs-ZfT"/>
+                <outlet property="displayMonitor" destination="9xJ-9B-r1b" id="RXT-uS-WJR"/>
                 <outlet property="versionNumber" destination="qOG-uT-iyZ" id="CV0-gz-EWN"/>
                 <outlet property="window" destination="1" id="9"/>
             </connections>
@@ -53,7 +53,7 @@
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
-                                        <textField verticalHuggingPriority="750" misplaced="YES" tag="1000" textCompletion="NO" id="wDd-as-ziU">
+                                        <textField verticalHuggingPriority="750" misplaced="YES" tag="2000" textCompletion="NO" id="wDd-as-ziU">
                                             <rect key="frame" x="149" y="66" width="127" height="22"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="cOz-8C-bt4">
@@ -66,20 +66,15 @@
                                                 </allowedInputSourceLocales>
                                             </textFieldCell>
                                         </textField>
-                                        <comboBox verticalHuggingPriority="750" misplaced="YES" id="O5q-M7-pZO">
-                                            <rect key="frame" x="149" y="93" width="130" height="26"/>
+                                        <textField verticalHuggingPriority="750" misplaced="YES" tag="1000" id="9xJ-9B-r1b">
+                                            <rect key="frame" x="149" y="98" width="127" height="22"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                                            <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="xGa-Ec-WcW">
+                                            <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="Loy-Oa-YEj">
                                                 <font key="font" metaFont="system"/>
-                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                                <objectValues>
-                                                    <string>Item 1</string>
-                                                    <string>Item 2</string>
-                                                    <string>Item 3</string>
-                                                </objectValues>
-                                            </comboBoxCell>
-                                        </comboBox>
+                                            </textFieldCell>
+                                        </textField>
                                     </subviews>
                                 </view>
                             </tabViewItem>

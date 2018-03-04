@@ -12,11 +12,9 @@
 #import "KeyD_AppDelegate+.h"
 
 @implementation KeyDPreferencesWindowController
-@synthesize radioHotKeyOptionR;
-@synthesize radioHotKeyCommandR;
 @synthesize versionNumber;
 @synthesize displayDuration;
-@synthesize cboDisplayMonitor;
+@synthesize displayMonitor;
 
 - (id)initWithWindow:(NSWindow *)window
 {
@@ -39,19 +37,7 @@
     
     [self loadPreference];
     
-    [cboDisplayMonitor removeAllItems];
-
-    int i = 0;
-    for(NSScreen* screen in [NSScreen screens]) {
-        NSDictionary* screenDictionary = [screen deviceDescription];
-        NSNumber* screenID = [screenDictionary objectForKey:@"NSScreenNumber"];
-        CGDirectDisplayID aID = [screenID unsignedIntValue];
-        NSLog(@"Screen number %i is%@ builtin", i, CGDisplayIsBuiltin(aID)? @"": @" not");
-        i++;
-        
-        [cboDisplayMonitor addItemWithObjectValue:CGDisplayIsBuiltin(aID)? [@"internal " stringByAppendingString:@(i).stringValue]: [@"external " stringByAppendingString:@(i).stringValue]];
-    }
-    
+    [displayMonitor setDelegate:self];
     [displayDuration setDelegate:self];
 }
 
@@ -59,6 +45,10 @@
  설정 값 가져오기
 */
 - (void) loadPreference {
+    NSString* displayMonitorValue = [[NSUserDefaults standardUserDefaults] stringForKey:DEFAULT_KEY_DISPLAY_MONITOR];
+    if (nil != displayMonitorValue) {
+        [displayMonitor setTitleWithMnemonic:displayMonitorValue];
+    }
     NSString* displayDurationValue = [[NSUserDefaults standardUserDefaults] stringForKey:DEFAULT_KEY_DISPLAY_DURATION];
     if (nil != displayDurationValue) {
         [displayDuration setTitleWithMnemonic:displayDurationValue];
@@ -68,8 +58,13 @@
 - (void) saveValue:(NSTextField*) value {
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     NSString* valueString = [value stringValue];
-    NSLog(@"Display duration %@", valueString);
-    [userDefaults setValue:valueString forKey:DEFAULT_KEY_DISPLAY_DURATION];
+    int tag = [value tag];
+    if (1000 == tag) {
+        [userDefaults setValue:valueString forKey:DEFAULT_KEY_DISPLAY_MONITOR];
+    }
+    else if (2000 == tag) {
+        [userDefaults setValue:valueString forKey:DEFAULT_KEY_DISPLAY_DURATION];
+    }
     [userDefaults synchronize];
     [(KeyDAppDelegate *)[NSApp delegate] loadPreferences];
 }

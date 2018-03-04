@@ -21,4 +21,5 @@
 #define STATUS_MENU_ICON_RED @"icon_red"
 #define STATUS_MENU_ICON_BLUE @"icon_blue"
 
+#define DEFAULT_KEY_DISPLAY_MONITOR @"DisplayMonitor"
 #define DEFAULT_KEY_DISPLAY_DURATION @"DisplayDuration"
