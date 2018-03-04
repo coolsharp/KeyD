@@ -52,7 +52,7 @@
         [cboDisplayMonitor addItemWithObjectValue:CGDisplayIsBuiltin(aID)? [@"internal " stringByAppendingString:@(i).stringValue]: [@"external " stringByAppendingString:@(i).stringValue]];
     }
     
-//    [displayDuration setDelegate:self];
+    [displayDuration setDelegate:self];
 }
 
 /*
@@ -76,7 +76,7 @@
 
 - (void)controlTextDidChange:(NSNotification *)notification {
     NSTextField *textField = [notification object];
-//    [self saveValue:textField];
+    [self saveValue:textField];
     NSLog(@"controlTextDidChange: stringValue == %@", [textField stringValue]);
 }
 @end

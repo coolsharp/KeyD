@@ -19,24 +19,24 @@
         <window title="KeyD" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" oneShot="NO" visibleAtLaunch="NO" animationBehavior="default" id="1">
             <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
-            <rect key="contentRect" x="196" y="240" width="376" height="465"/>
+            <rect key="contentRect" x="196" y="240" width="332" height="200"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1440" height="878"/>
             <view key="contentView" misplaced="YES" id="2">
-                <rect key="frame" x="0.0" y="0.0" width="376" height="465"/>
+                <rect key="frame" x="0.0" y="0.0" width="332" height="200"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <tabView misplaced="YES" initialItem="5" id="4">
-                        <rect key="frame" x="13" y="86" width="345" height="365"/>
+                        <rect key="frame" x="13" y="11" width="306" height="175"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <font key="font" metaFont="system"/>
                         <tabViewItems>
                             <tabViewItem label="Preference" identifier="1" id="5">
                                 <view key="view" id="8">
-                                    <rect key="frame" x="10" y="33" width="325" height="319"/>
+                                    <rect key="frame" x="10" y="33" width="286" height="129"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" id="QlT-lt-MlY">
-                                            <rect key="frame" x="4" y="290" width="139" height="17"/>
+                                            <rect key="frame" x="4" y="100" width="139" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Select display monitor" id="MT2-sF-UWG">
                                                 <font key="font" metaFont="system"/>
@@ -45,7 +45,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" misplaced="YES" id="0zx-C0-VkB">
-                                            <rect key="frame" x="4" y="259" width="102" height="17"/>
+                                            <rect key="frame" x="4" y="69" width="102" height="17"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Display duration" id="Zwa-Km-5ec">
                                                 <font key="font" metaFont="system"/>
@@ -53,18 +53,21 @@
                                                 <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                             </textFieldCell>
                                         </textField>
-                                        <textField verticalHuggingPriority="750" misplaced="YES" tag="1000" id="wDd-as-ziU">
-                                            <rect key="frame" x="149" y="256" width="127" height="22"/>
+                                        <textField verticalHuggingPriority="750" misplaced="YES" tag="1000" textCompletion="NO" id="wDd-as-ziU">
+                                            <rect key="frame" x="149" y="66" width="127" height="22"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="cOz-8C-bt4">
                                                 <numberFormatter key="formatter" formatterBehavior="default10_4" numberStyle="decimal" minimumIntegerDigits="1" maximumIntegerDigits="2000000000" maximumFractionDigits="3" id="Seg-dG-kCU"/>
                                                 <font key="font" metaFont="system"/>
                                                 <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                <allowedInputSourceLocales>
+                                                    <string>NSAllRomanInputSourcesLocaleIdentifier</string>
+                                                </allowedInputSourceLocales>
                                             </textFieldCell>
                                         </textField>
                                         <comboBox verticalHuggingPriority="750" misplaced="YES" id="O5q-M7-pZO">
-                                            <rect key="frame" x="149" y="283" width="130" height="26"/>
+                                            <rect key="frame" x="149" y="93" width="130" height="26"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <comboBoxCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" borderStyle="bezel" drawsBackground="YES" completes="NO" numberOfVisibleItems="5" id="xGa-Ec-WcW">
                                                 <font key="font" metaFont="system"/>
@@ -82,16 +85,16 @@
                             </tabViewItem>
                             <tabViewItem label="About" identifier="2" id="6">
                                 <view key="view" id="7">
-                                    <rect key="frame" x="10" y="33" width="325" height="319"/>
+                                    <rect key="frame" x="10" y="33" width="286" height="129"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <imageView misplaced="YES" id="WiU-v3-LOS">
-                                            <rect key="frame" x="14" y="158" width="167" height="161"/>
+                                            <rect key="frame" x="5" y="-6" width="139" height="135"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyDown" imageFrameStyle="grayBezel" image="icon" id="Lru-eN-qQW"/>
                                         </imageView>
                                         <textField verticalHuggingPriority="750" misplaced="YES" id="Him-x4-LTI">
-                                            <rect key="frame" x="184" y="292" width="117" height="24"/>
+                                            <rect key="frame" x="154" y="97" width="117" height="24"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="KeyD" id="Tf3-yC-0tX">
                                                 <font key="font" metaFont="system" size="20"/>
@@ -100,7 +103,7 @@
                                             </textFieldCell>
                                         </textField>
                                         <textField verticalHuggingPriority="750" misplaced="YES" id="qOG-uT-iyZ">
-                                            <rect key="frame" x="233" y="288" width="117" height="24"/>
+                                            <rect key="frame" x="206" y="93" width="74" height="24"/>
                                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                             <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="$version" id="L68-Ol-YDV">
                                                 <font key="font" metaFont="system" size="16"/>
@@ -115,7 +118,7 @@
                     </tabView>
                 </subviews>
             </view>
-            <point key="canvasLocation" x="-539" y="88.5"/>
+            <point key="canvasLocation" x="-561" y="-44"/>
         </window>
     </objects>
     <resources>
