@@ -14,6 +14,7 @@
 @private
     BOOL fadingOut;
     float duration;
+    int monitor;
 }
 @property (assign) IBOutlet NSWindow *window;
 @property (assign) IBOutlet NSTextField *isName;

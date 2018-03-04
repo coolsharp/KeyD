@@ -24,6 +24,12 @@
     else {
         duration = KEYD_DURATION;
     }
+    if (nil != [[NSUserDefaults standardUserDefaults] objectForKey:DEFAULT_KEY_DISPLAY_MONITOR]) {
+        monitor = [[NSUserDefaults standardUserDefaults] floatForKey:DEFAULT_KEY_DISPLAY_MONITOR];
+    }
+    else {
+        monitor = 0;
+    }
 }
 @end
 
@@ -229,7 +235,7 @@
     windowFrame.size.width = KEYD_WIDTH;
     windowFrame.size.height = KEYD_HEIGHT;
     
-    NSRect screenRect = [[[NSScreen screens] objectAtIndex:1] visibleFrame];
+    NSRect screenRect = [[[NSScreen screens] objectAtIndex:monitor] visibleFrame];
     windowFrame.origin.x = screenRect.origin.x + (screenRect.size.width - windowFrame.size.width) / 2;
     windowFrame.origin.y = screenRect.origin.y + (screenRect.size.height - windowFrame.size.height) / 2;
     

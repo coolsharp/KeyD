@@ -33,6 +33,7 @@
 		D6BEAEA92035734A00FAC0F7 /* icon_red@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon_red@2x.png"; sourceTree = "<group>"; };
 		D6E68DFF202B569E00BD9535 /* ko */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ko; path = ko.lproj/MainMenu.xib; sourceTree = "<group>"; };
 		D6E68E01202B569E00BD9535 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = ko.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		D6F7947E204C333F00B9E17A /* ko */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ko; path = ko.lproj/PreferencesWindow.xib; sourceTree = "<group>"; };
 		E06496EB14737582008B28E0 /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
 		E06497011473871D008B28E0 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
 		E093DDE51475248700ACB3FA /* CHANGELOG.md */ = {isa = PBXFileReference; lastKnownFileType = text; path = CHANGELOG.md; sourceTree = "<group>"; };
@@ -258,6 +259,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				E0988E25147940EB00E75145 /* en */,
+				D6F7947E204C333F00B9E17A /* ko */,
 			);
 			name = PreferencesWindow.xib;
 			sourceTree = "<group>";
