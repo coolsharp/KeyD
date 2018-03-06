@@ -6,6 +6,9 @@ KeyD는 한영 키 전환등의 이벤트를 감지해 현재 input sources 상�
 
 ![Screenshot](https://i.imgur.com/klG2iAp.png)
 
+- [Download](https://drive.google.com/open?id=1TlAfDc1XsGwqUk2sjdphBuwGEy1qLyKU)
+
+
 ## Base Code
 - [isHUD on github](https://github.com/ghawkgu/isHUD)
 
