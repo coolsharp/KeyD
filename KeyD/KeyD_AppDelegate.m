@@ -235,6 +235,10 @@
     windowFrame.size.width = KEYD_WIDTH;
     windowFrame.size.height = KEYD_HEIGHT;
     
+    if (monitor >= [[NSScreen screens] count]) {
+        monitor = [[NSScreen screens] count] - 1;
+    }
+    
     NSRect screenRect = [[[NSScreen screens] objectAtIndex:monitor] visibleFrame];
     windowFrame.origin.x = screenRect.origin.x + (screenRect.size.width - windowFrame.size.width) / 2;
     windowFrame.origin.y = screenRect.origin.y + (screenRect.size.height - windowFrame.size.height) / 2;
